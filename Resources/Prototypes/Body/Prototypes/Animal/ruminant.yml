@@ -1,0 +1,22 @@
+﻿- type: body
+  id: AnimalRuminant
+  name: "ruminant"
+  root: torso
+  slots:
+    torso:
+      part: TorsoAnimal
+      connections:
+      - legs
+      organs:
+        lungs: OrganAnimalLungs
+        stomach: OrganAnimalRuminantStomach
+        stomach2: OrganAnimalRuminantStomach2 # Shitmed change: UI shits itself if multiple organs have the same slotId
+        liver: OrganAnimalLiver
+        heart: OrganAnimalHeart
+        kidneys: OrganAnimalKidneys
+    legs:
+      part: LegsAnimal
+      connections:
+      - feet
+    feet:
+      part: FeetAnimal

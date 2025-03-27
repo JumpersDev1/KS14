@@ -1,0 +1,96 @@
+- type: jukebox
+  id: blindrage.ogg
+  name:  blindrage.ogg
+  path:
+    path: /Audio/Lobby/blindrage.ogg
+
+- type: jukebox
+  id: breakofdawn.ogg
+  name:  breakofdawn.ogg
+  path:
+    path: /Audio/Lobby/breakofdawn.ogg
+
+- type: jukebox
+  id: futureclub.ogg
+  name:  futureclub.ogg
+  path:
+    path: /Audio/Lobby/futureclub.ogg
+
+- type: jukebox
+  id: heymanniceshot.ogg
+  name:  heymanniceshot.ogg
+  path:
+    path: /Audio/Lobby/heymanniceshot.ogg
+
+- type: jukebox
+  id: honestlynoidea.ogg
+  name:  honestlynoidea.ogg
+  path:
+    path: /Audio/Lobby/honestlynoidea.ogg
+
+- type: jukebox
+  id: jeettrain.ogg
+  name:  jeettrain.ogg
+  path:
+    path: /Audio/Lobby/jeettrain.ogg
+
+- type: jukebox
+  id: jzoft3.ogg
+  name:  jzoft3.ogg
+  path:
+    path: /Audio/Lobby/jzoft3.ogg
+
+- type: jukebox
+  id: kaliyuga.ogg
+  name:  kaliyuga.ogg
+  path:
+    path: /Audio/Lobby/kaliyuga.ogg
+
+- type: jukebox
+  id: policetruck.ogg
+  name:  policetruck.ogg
+  path:
+    path: /Audio/Lobby/policetruck.ogg
+
+- type: jukebox
+  id: pwmur.ogg
+  name:  pwmur.ogg
+  path:
+    path: /Audio/Lobby/pwmur.ogg
+
+- type: jukebox
+  id: ransumaasta.ogg
+  name:  ransumaasta.ogg
+  path:
+    path: /Audio/Lobby/ransumaasta.ogg
+
+- type: jukebox
+  id: robocop3.ogg
+  name:  robocop3.ogg
+  path:
+    path: /Audio/Lobby/robocop3.ogg
+
+- type: jukebox
+  id: sneedsfeedandseed.ogg
+  name:  sneedsfeedandseed.ogg
+  path:
+    path: /Audio/Lobby/sneedsfeedandseed.ogg
+
+- type: jukebox
+  id: sunset.ogg
+  name:  sunset.ogg
+  path:
+    path: /Audio/Lobby/sunset.ogg
+
+- type: jukebox
+  id: thefinalflashofexistence.ogg
+  name:  thefinalflashofexistence.ogg
+  path:
+    path: /Audio/Lobby/thefinalflashofexistence.ogg
+
+- type: jukebox
+  id: welcomenigga.ogg
+  name:  welcomenigga.ogg
+  path:
+    path: /Audio/Lobby/welcomenigga.ogg
+

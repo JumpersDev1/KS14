@@ -1,0 +1,20 @@
+- type: vendingMachineInventory
+  id: PrideDrobeInventory
+  startingInventory:
+    ClothingNeckLGBTPin: 3
+    ClothingNeckAllyPin: 3
+    ClothingNeckAromanticPin: 3
+    ClothingNeckAsexualPin: 3
+    ClothingNeckBisexualPin: 3
+    ClothingNeckGayPin: 3
+    ClothingNeckIntersexPin: 3
+    ClothingNeckLesbianPin: 3
+    ClothingNeckNonBinaryPin: 3
+    ClothingNeckPansexualPin: 3
+    ClothingNeckOmnisexualPin: 3
+    ClothingNeckGenderqueerPin: 3
+    ClothingNeckTransPin: 3
+    ClothingNeckAutismPin: 3
+    ClothingNeckCloakTrans: 14
+  contrabandInventory:
+    ClothingNeckCloakAro: 88

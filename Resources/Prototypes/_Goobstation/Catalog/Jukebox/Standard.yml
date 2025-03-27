@@ -1,0 +1,23 @@
+- type: jukebox
+  id: silverpony
+  name: Silver Jews - Pony
+  path:
+    path: /Audio/Lobby/silverpony.ogg
+
+- type: jukebox
+  id: drillpony
+  name: MC Firedrill - Pony
+  path:
+    path: /Audio/Lobby/drillpony.ogg
+
+- type: jukebox
+  id: ponysong
+  name: Edith Frost - Pony Song
+  path:
+    path: /Audio/Lobby/ponysong.ogg
+
+- type: jukebox
+  id: luckyhorse
+  name: Movie Star Junkies - Lucky Horse
+  path:
+    path: /Audio/Lobby/luckyhorse.ogg

@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: MakeshiftArmor
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: armor
+      steps:
+        - material: Cable
+          amount: 10
+          doAfter: 2
+        - material: Plasteel
+          amount: 8
+          doAfter: 2
+  - node: armor
+    entity: ClothingOuterArmorMakeshift

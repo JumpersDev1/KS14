@@ -1,0 +1,94 @@
+accent-lizard-words-47 = girls
+accent-lizard-words-47-2 = girlfriends
+accent-lizard-words-47-3 = spouses
+accent-lizard-words-47-4 = wives
+accent-lizard-words-replace-47 = hoes
+
+accent-lizard-words-48 = women
+accent-lizard-words-replace-48 = bitches
+
+accent-lizard-words-49 = boys
+accent-lizard-words-49-2 = lads
+accent-lizard-words-replace-49 = lil' lizzas
+
+accent-lizard-words-50 = lizards
+accent-lizard-words-50-2 = reptiles
+accent-lizard-words-50-3 = men
+accent-lizard-words-50-4 = guys
+accent-lizard-words-50-5 = people
+accent-lizard-words-replace-50 = lizzas
+
+accent-lizard-words-51 = shits
+accent-lizard-words-replace-51 = shiets
+
+accent-lizard-words-52 = captains
+accent-lizard-words-52-2 = kings
+accent-lizard-words-replace-52 = kangs
+
+accent-lizard-words-53 = guns
+accent-lizard-words-53-2 = pistols
+accent-lizard-words-53-3 = lasers
+accent-lizard-words-53-4 = lazers
+accent-lizard-words-replace-53 = blickys
+
+accent-lizard-words-54 = laws
+accent-lizard-words-replace-54 = gay shiets
+
+accent-lizard-words-55 = humans
+accent-lizard-words-replace-55 = monkeys
+
+accent-lizard-words-56 = idiots
+accent-lizard-words-56-2 = cretins
+accent-lizard-words-56-3 = retards
+accent-lizard-words-56-4 = dumbasses
+accent-lizard-words-56-5 = morons
+accent-lizard-words-replace-56 = fools
+
+accent-lizard-words-57 = wizards
+accent-lizard-words-replace-57 = magic men
+
+accent-lizard-words-58 = officers
+accent-lizard-words-58-2 = cops
+accent-lizard-words-58-3 = seccies
+accent-lizard-words-58-4 = policemen
+accent-lizard-words-replace-58 = pigs
+
+accent-lizard-words-47 = girls
+accent-lizard-words-47-2 = girlfriends
+accent-lizard-words-47-3 = spouses
+accent-lizard-words-47-4 = wives
+accent-lizard-words-replace-47 = hoes
+
+accent-lizard-words-48 = women
+accent-lizard-words-replace-48 = bitches
+
+accent-lizard-words-49 = boys
+accent-lizard-words-49-2 = lads
+accent-lizard-words-replace-49 = lil' lizzas
+
+accent-lizard-words-50 = lizards
+accent-lizard-words-50-2 = reptiles
+accent-lizard-words-50-3 = reptilians
+accent-lizard-words-50-4 = men
+accent-lizard-words-50-5 = guys
+accent-lizard-words-replace-50 = lizzas
+
+accent-lizard-words-51 = humans
+accent-lizard-words-replace-51 = monkeys
+
+accent-lizard-words-52 = kings
+accent-lizard-words-52-2 = captains
+accent-lizard-words-replace-52 = kangz
+
+accent-lizard-words-53 = guns
+accent-lizard-words-53-2 = pistols
+accent-lizard-words-53-3 = lazers
+accent-lizard-words-53-4 = lasers
+accent-lizard-words-replace-53 = blickys
+
+accent-lizard-words-47 = guns
+accent-lizard-words-47-2 = pistols
+accent-lizard-words-47-3 = lazers
+accent-lizard-words-47-4 = lasers
+accent-lizard-words-replace-47 = blickys
+

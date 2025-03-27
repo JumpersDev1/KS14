@@ -1,0 +1,20 @@
+- type: lobbyBackground
+  id: engiwherespower.png
+  background: /Textures/LobbyScreens/engiwherespower.png
+
+- type: lobbyBackground
+  id: fuckgriggers.png
+  background: /Textures/LobbyScreens/fuckgriggers.png
+
+- type: lobbyBackground
+  id: grrgraphics.png
+  background: /Textures/LobbyScreens/grrgraphics.png
+
+- type: lobbyBackground
+  id: middlestation.png
+  background: /Textures/LobbyScreens/middlestation.png
+
+- type: lobbyBackground
+  id: nogriggers.png
+  background: /Textures/LobbyScreens/nogriggers.png
+
