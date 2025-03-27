@@ -249,7 +249,7 @@ public abstract class SharedRoleSystem : EntitySystem
     {
         if (!MindHasRole<T>(mindId))
         {
-            Log.Warning($"Failed to remove role {typeof(T)} from {mindId} : mind does not have role ");
+            //Log.Warning($"Failed to remove role {typeof(T)} from {mindId} : mind does not have role ");
             return false;
         }
 

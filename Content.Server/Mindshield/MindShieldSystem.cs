@@ -7,6 +7,7 @@ using Content.Shared.Database;
 using Content.Shared.Implants;
 using Content.Shared.Implants.Components;
 using Content.Shared.Mindshield.Components;
+using Content.Shared.Mind;
 using Content.Shared.Revolutionary; // GoobStation
 using Content.Shared.Revolutionary.Components;
 using Content.Shared.Tag;
@@ -67,10 +68,18 @@ public sealed class MindShieldSystem : EntitySystem
             return;
         }
 
-        if (_mindSystem.TryGetMind(implanted, out var mindId, out _) &&
+        if (_mindSystem.TryGetMind(implanted, out var mindId, out var mind) &&
             _roleSystem.MindTryRemoveRole<RevolutionaryRoleComponent>(mindId))
         {
             _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(implanted)} was deconverted due to being implanted with a Mindshield.");
+        }
+        else if (_roleSystem.MindTryRemoveRole<TraitorRoleComponent>(mindId) && mind != null) //removes traitor from traitors - KS14
+        {
+            for (int i = 0; i <= (mind.Objectives?.ToArray().Length ?? 0); i++) {
+                _mindSystem.TryRemoveObjective(mindId, mind, 0);
+            }
+
+            _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(implanted)} was detraitored due to being implanted with a Mindshield.");
         }
         if (HasComp<MindcontrolledComponent>(implanted))   //Goobstation - Mindcontrol Implant
             RemComp<MindcontrolledComponent>(implanted);

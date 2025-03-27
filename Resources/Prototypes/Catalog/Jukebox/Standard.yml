@@ -29,12 +29,6 @@
     path: /Audio/Lobby/honestlynoidea.ogg
 
 - type: jukebox
-  id: jeettrain.ogg
-  name:  jeettrain.ogg
-  path:
-    path: /Audio/Lobby/jeettrain.ogg
-
-- type: jukebox
   id: jzoft3.ogg
   name:  jzoft3.ogg
   path:
@@ -45,12 +39,6 @@
   name:  kaliyuga.ogg
   path:
     path: /Audio/Lobby/kaliyuga.ogg
-
-- type: jukebox
-  id: policetruck.ogg
-  name:  policetruck.ogg
-  path:
-    path: /Audio/Lobby/policetruck.ogg
 
 - type: jukebox
   id: pwmur.ogg
