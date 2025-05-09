@@ -28160,7 +28160,7 @@ entities:
     - type: Transform
       pos: 8.5,-20.5
       parent: 1668
-- proto: PosterLegitKSLeaders
+- proto: PosterLegitJustAWeekAway
   entities:
   - uid: 6741
     components:

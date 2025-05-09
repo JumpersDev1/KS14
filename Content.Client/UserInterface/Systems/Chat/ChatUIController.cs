@@ -121,7 +121,6 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     private const string ChatNamePalette = "ChatNames";
     private string[] _chatNameColors = default!;
     private bool _chatNameColorsEnabled;
-    public bool ChatSlurFilterEnabled;
 
     private ISawmill _sawmill = default!;
 
@@ -242,7 +241,6 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         _net.RegisterNetMessage<MsgDeleteChatMessagesBy>(OnDeleteChatMessagesBy);
         SubscribeNetworkEvent<DamageForceSayEvent>(OnDamageForceSay);
         _config.OnValueChanged(CCVars.ChatEnableColorName, (value) => { _chatNameColorsEnabled = value; });
-        _config.OnValueChanged(CCVars.SlurFilter, OnSlurFilterChanged, true);
         _chatNameColorsEnabled = _config.GetCVar(CCVars.ChatEnableColorName);
 
         _speechBubbleRoot = new LayoutContainer();
@@ -344,10 +342,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     {
         system.OnCharacterUpdate += OnCharacterUpdated;
     }
-    private void OnSlurFilterChanged(bool obj)
-    {
-        ChatSlurFilterEnabled = obj;
-    }
+
     public void OnSystemUnloaded(CharacterInfoSystem system)
     {
         system.OnCharacterUpdate -= OnCharacterUpdated;
@@ -656,7 +651,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     private void EnqueueSpeechBubble(EntityUid entity, ChatMessage message, SpeechBubble.SpeechType speechType)
     {
         // Don't enqueue speech bubbles for other maps. TODO: Support multiple viewports/maps?
-        if (EntityManager.GetComponent<TransformComponent>(entity).MapID != _eye.CurrentMap)
+        if (EntityManager.GetComponent<TransformComponent>(entity).MapID != _eye.CurrentEye.Position.MapId)
             return;
 
         if (!_queuedSpeechBubbles.TryGetValue(entity, out var queueData))
@@ -1038,10 +1033,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
             if (grammar != null && grammar.ProperNoun == true)
                 msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
         }
-        // filter slurs
-        if (ChatSlurFilterEnabled) {
-            msg.WrappedMessage = ChatSlurFilterSystem.FilterSlurs(msg.WrappedMessage);
-        }
+
         // Goobstation - color any words choosen by the client.
         foreach (var highlight in _highlights)
         {

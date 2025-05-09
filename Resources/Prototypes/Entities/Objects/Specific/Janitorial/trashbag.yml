@@ -29,17 +29,6 @@
   id: TrashBag
   parent: BaseStorageItem
   components:
-  - type: MagnetPickup
-    forcePickup: true
-  - type: ItemToggle
-    soundActivate:
-      collection: sparks
-      params:
-        variation: 0.250
-    soundDeactivate:
-      collection: sparks
-      params:
-        variation: 0.250
   - type: Sprite
     sprite: Objects/Specific/Janitorial/trashbag.rsi
     layers:

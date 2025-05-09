@@ -54,7 +54,7 @@
   id: RedLaser
   damage:
     types:
-      Heat: 23
+      Heat: 14
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -84,7 +84,7 @@
   id: RedMediumLaser
   damage:
     types:
-      Heat: 30
+      Heat: 17
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -99,7 +99,7 @@
   id: RedLightLaser
   damage:
     types:
-      Heat: 14
+      Heat: 7
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -114,8 +114,8 @@
   id: XrayLaser
   damage:
     types:
-      Heat: 20
-      Radiation: 20
+      Heat: 10
+      Radiation: 10
       Ion: 15 #Goobstation
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -131,7 +131,7 @@
   id: RedHeavyLaser
   damage:
     types:
-      Heat: 45
+      Heat: 28
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_beam_heavy
@@ -146,8 +146,8 @@
   id: Pulse
   damage:
     types:
-      Heat: 30 # Slightly nerfing damage, otherwise people will bitch about how I'm giving the pulse pistol out like candy
-      Blunt: 5 # Split damage is cool.
+      Heat: 30 # Goobstation
+      Blunt: 5 # Split damage is cool. - Goobstation
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -163,8 +163,8 @@
   maxLength: 60
   damage:
     types:
-      Heat: 140
-      Structural: 200
+      Heat: 45
+      Structural: 10
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_beam_heavy2

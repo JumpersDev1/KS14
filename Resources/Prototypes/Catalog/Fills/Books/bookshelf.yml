@@ -39,6 +39,7 @@
       - id: BookScientistsGuidebook
       - id: BookSecurity
       - id: BookSpaceEncyclopedia
+      - id: BookSpaceLaw
       - id: BookTheBookOfControl
     # Handwritten books
     - !type:GroupSelector

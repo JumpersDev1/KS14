@@ -82,19 +82,6 @@
   objectType: Item
 
 - type: construction
-  name: makeshift armor
-  id: ClothingOuterArmorMakeshift
-  graph: MakeshiftArmorGraph
-  startNode: start
-  targetNode: armor
-  category: construction-category-weapons
-  description: "Homemade set of armor. Sturdy, but heavy."
-  icon:
-    sprite: Clothing/OuterClothing/Armor/makeshift.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
   name: muzzle
   id: muzzle
   graph: Muzzle

@@ -46,7 +46,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50
+        Piercing: 35
 
 - type: entity
   id: BulletMagnumPractice
@@ -80,8 +80,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35 # 20% decrease
-    ignoreResistances: true
+        Piercing: 28 # Goobstation edit
+    armorPenetration: 0.75 # Goobstation
 
 - type: entity
   id: BulletMagnumUranium
@@ -93,4 +93,4 @@
     damage:
       types:
         Radiation: 15
-        Piercing: 50
+        Piercing: 20

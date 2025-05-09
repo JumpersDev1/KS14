@@ -33,7 +33,7 @@ using Content.Goobstation.Common.Footprints;
 using Content.Server.Popups;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Fluids;
 using Content.Shared.Fluids.Components;
 using Content.Shared.Interaction;
@@ -44,11 +44,6 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Server.Fluids.Components;
-using Content.Shared.Gravity;
-using Content.Shared.Movement.Components;
-using Content.Shared.Slippery;
-using Robust.Shared.Physics.Events;
 
 namespace Content.Server.Fluids.EntitySystems;
 
@@ -64,8 +59,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
     [Dependency] private readonly UseDelaySystem _useDelay = default!;
     [Dependency] private readonly MapSystem _mapSystem = default!;
-    [Dependency] private readonly SlipperySystem _slipperySystem = default!;
-    [Dependency] private readonly SharedGravitySystem _gravity = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -73,7 +67,6 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         SubscribeLocalEvent<AbsorbentComponent, AfterInteractEvent>(OnAfterInteract);
         SubscribeLocalEvent<AbsorbentComponent, UserActivateInWorldEvent>(OnActivateInWorld);
         SubscribeLocalEvent<AbsorbentComponent, SolutionContainerChangedEvent>(OnAbsorbentSolutionChange);
-        SubscribeLocalEvent<AbsorbentToggleComponent, StartCollideEvent>(OnCollide);
     }
 
     private void OnAbsorbentInit(EntityUid uid, AbsorbentComponent component, ComponentInit args)
@@ -140,7 +133,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         args.Handled = true;
     }
 
-    public void Mop(EntityUid user, EntityUid target, EntityUid used, AbsorbentComponent component, bool popups = true)
+    public void Mop(EntityUid user, EntityUid target, EntityUid used, AbsorbentComponent component)
     {
         if (!_solutionContainerSystem.TryGetSolution(used, AbsorbentComponent.SolutionName, out var absorberSoln))
             return;
@@ -150,7 +143,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
             return;
 
         // If it's a puddle try to grab from
-        if (!TryPuddleInteract(user, used, target, component, useDelay, absorberSoln.Value, popups))
+        if (!TryPuddleInteract(user, used, target, component, useDelay, absorberSoln.Value))
         {
             // If it's refillable try to transfer
             if (!TryRefillableInteract(user, used, target, component, useDelay, absorberSoln.Value))
@@ -305,7 +298,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
     /// <summary>
     ///     Logic for an absorbing entity interacting with a puddle.
     /// </summary>
-    private bool TryPuddleInteract(EntityUid user, EntityUid used, EntityUid target, AbsorbentComponent absorber, UseDelayComponent? useDelay, Entity<SolutionComponent> absorberSoln, bool popups = true)
+    private bool TryPuddleInteract(EntityUid user, EntityUid used, EntityUid target, AbsorbentComponent absorber, UseDelayComponent? useDelay, Entity<SolutionComponent> absorberSoln)
     {
         if (!TryComp(target, out PuddleComponent? puddle))
             return false;
@@ -316,8 +309,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         // Check if the puddle has any non-evaporative reagents
         if (_puddleSystem.CanFullyEvaporate(puddleSolution))
         {
-            if (popups)
-                _popups.PopupEntity(Loc.GetString("mopping-system-puddle-evaporate", ("target", target)), user, user);
+            _popups.PopupEntity(Loc.GetString("mopping-system-puddle-evaporate", ("target", target)), user, user);
             return true;
         }
 
@@ -328,8 +320,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         // No material
         if (available == FixedPoint2.Zero)
         {
-            if (popups)
-                _popups.PopupEntity(Loc.GetString("mopping-system-no-water", ("used", used)), user, user);
+            _popups.PopupEntity(Loc.GetString("mopping-system-no-water", ("used", used)), user, user);
             return true;
         }
 
@@ -365,27 +356,5 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         RaiseLocalEvent(target, new FootprintCleanEvent()); // Corvax-Next-Footprints
 
         return true;
-    }
-    private void OnCollide(EntityUid uid, AbsorbentToggleComponent component, ref StartCollideEvent args)
-    {
-        if (!component.Enabled)
-            return;
-        if (!TryComp<AbsorbentComponent>(uid, out var absorbentComp))
-        {
-            component.Enabled = false;
-            return;
-        }
-        if (_gravity.IsWeightless(uid))
-        {
-            return;
-        }
-        if (HasComp<PuddleComponent>(args.OtherEntity))
-        {
-            Mop(uid, args.OtherEntity, uid, absorbentComp, false);
-        }
-        else if (TryComp<SlipperyComponent>(uid, out var slipperyComp) && HasComp<InputMoverComponent>(args.OtherEntity))
-        {
-            _slipperySystem.TrySlip(uid, slipperyComp, args.OtherEntity);
-        }
     }
 }

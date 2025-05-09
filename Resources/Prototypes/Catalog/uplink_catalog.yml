@@ -104,7 +104,6 @@
 # SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 GitHubUser53123 <110841413+GitHubUser53123@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Hmeister-real <118129069+Hmeister-real@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
 # SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
@@ -155,6 +154,10 @@
 # SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 LuciferEOS <stepanteliatnik2022@gmail.com>
+# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Minemoder5000 <minemoder50000@gmail.com>
 # SPDX-FileCopyrightText: 2025 Preston Smith <92108534+thetolbean@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
 # SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
@@ -165,6 +168,7 @@
 # SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 # SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 TurboTracker <130304754+TurboTrackerss14@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Velcroboy <107660393+iamvelcroboy@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
 # SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
@@ -184,7 +188,7 @@
   description: uplink-pistol-viper-desc
   productEntity: WeaponPistolViper
   cost:
-    Telecrystal: 20 # goob - this +1 mag = 16 TC
+    Telecrystal: 13 # goob - this +1 mag = 15 TC
   categories:
   - UplinkWeaponry
 
@@ -194,7 +198,7 @@
   description: uplink-revolver-python-desc
   productEntity: WeaponRevolverPythonAP
   cost:
-    Telecrystal: 30 # goob - Originally was 65 TC but was not used due to high cost. and the same happened at 40 TC. +2 mags = 30 TC.
+    Telecrystal: 20 # goob - Originally was 65 TC but was not used due to high cost. and the same happened at 40 TC. +2 mags = 30 TC.
   categories:
   - UplinkWeaponry
 
@@ -206,7 +210,7 @@
   description: uplink-pistol-cobra-desc
   productEntity: WeaponPistolCobra
   cost:
-    Telecrystal: 25 # goob - this +1 mag = 17 TC
+    Telecrystal: 17 # goob - this +1 mag = 20 TC
   categories:
   - UplinkWeaponry
 
@@ -218,7 +222,7 @@
   description: uplink-rifle-mosin-desc
   productEntity: WeaponSniperMosin
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 4 # goob
   categories:
   - UplinkWeaponry
 
@@ -276,7 +280,7 @@
   description: uplink-disposable-turret-desc
   productEntity: ToolboxElectricalTurretFilled
   cost:
-    Telecrystal: 50 # goob
+    Telecrystal: 30 # goob
   categories:
   - UplinkWeaponry
   conditions:
@@ -305,7 +309,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: BriefcaseSyndieSniperBundleFilled
   cost:
-    Telecrystal: 80 # goob
+    Telecrystal: 75 # goob
   categories:
   - UplinkWeaponry
 
@@ -317,7 +321,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
   productEntity: WeaponSubMachineGunC20r #Goob unbundle update
   cost:
-    Telecrystal: 70 # goob unbunde update
+    Telecrystal: 50 # goob unbunde update
   categories:
   - UplinkWeaponry
 
@@ -329,7 +333,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   productEntity: WeaponShotgunBulldog
   cost:
-    Telecrystal: 80 # goob
+    Telecrystal: 60 # goob
   categories:
   - UplinkWeaponry
 
@@ -353,7 +357,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi, state: icon }
   productEntity: WeaponLightMachineGunL6
   cost:
-    Telecrystal: 140 # goob
+    Telecrystal: 100 # goob
   categories:
   - UplinkWeaponry
 
@@ -587,7 +591,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
   productEntity: MagazinePistol
   cost:
-    Telecrystal: 5 # goob - Ammo should be cheap.
+    Telecrystal: 2 # goob - Ammo should be cheap.
   categories:
   - UplinkAmmo
 
@@ -599,7 +603,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   productEntity: MagazinePistolSubMachineGun
   cost:
-    Telecrystal: 10 # goob - Bundle + 3 Mags = 100 TC
+    Telecrystal: 5 # goob - Ammo should be cheap. 96 dmg per TC.
   categories:
   - UplinkAmmo
 
@@ -611,7 +615,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red-icon }
   productEntity: MagazinePistolCaselessRifle
   cost:
-    Telecrystal: 7 # goob - Same price as .35, more damage but less ammo in mag
+    Telecrystal: 3 # goob
   categories:
   - UplinkAmmo
 
@@ -623,7 +627,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
   productEntity: SpeedLoaderMagnumAP
   cost:
-    Telecrystal: 12 # goob - AP, but only 6 bullets in speedloader
+    Telecrystal: 3 # goob - AP, but only 6 bullets in speedloader
   categories:
   - UplinkAmmo
 
@@ -634,7 +638,7 @@
   description: uplink-mosin-ammo-desc
   productEntity: MagazineBoxLightRifle
   cost:
-    Telecrystal: 18 # goob - l6 exists
+    Telecrystal: 9 # goob
   categories:
   - UplinkAmmo
 
@@ -645,7 +649,7 @@
   description: uplink-sniper-ammo-desc
   productEntity: MagazineBoxAntiMateriel
   cost:
-    Telecrystal: 12 # goob
+    Telecrystal: 10 # goob
   categories:
   - UplinkAmmo
 
@@ -730,7 +734,7 @@
   id: UplinkNocturineChemistryBottle
   name: uplink-nocturine-chemistry-bottle-name
   description: uplink-nocturine-chemistry-bottle-desc
-  productEntity: NocturineChemistryBottle
+  productEntity: ChemistryBottleNocturine
   cost:
     Telecrystal: 30 # goob
   categories:
@@ -852,9 +856,9 @@
   name: uplink-encryption-key-name
   description: uplink-encryption-key-desc
   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
-  productEntity: BoxEncryptionKeySyndie # Two for the price of one
+  productEntity: EncryptionKeySyndie # One for the price of one, but cheaper
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 3 # goob
   categories:
   - UplinkDeception
   conditions:
@@ -962,7 +966,7 @@
   description: uplink-access-breaker-desc
   productEntity: AccessBreaker
   cost:
-    Telecrystal: 25 # goob - keeping the 25 price since it's just damn good
+    Telecrystal: 20 # goob
   categories:
   - UplinkDisruption
 
@@ -972,7 +976,7 @@
   description: uplink-emag-desc
   productEntity: Emag
   cost:
-    Telecrystal: 15 # goob - I'm tempted to set it to 10, since it's pretty bad unless you have a good plan, but we'll keep it at 15 and see
+    Telecrystal: 20 # goob - not quite worth 25
   categories:
   - UplinkDisruption
 
@@ -983,7 +987,7 @@
   description: uplink-radio-jammer-desc
   productEntity: RadioJammer
   cost:
-    Telecrystal: 20 # goob
+    Telecrystal: 5 # goob
   categories:
   - UplinkDisruption
 
@@ -1126,10 +1130,11 @@
     blacklist:
       tags:
       - ContravendUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
+  # Goobstation
+  #- !type:BuyerWhitelistCondition
+  #  blacklist:
+  #    components:
+  #    - SurplusBundle
 
 - type: listing
   id: UplinkSuperSurplusBundle
@@ -1145,10 +1150,11 @@
     blacklist:
       tags:
       - ContravendUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
+  # Goobstation
+  #- !type:BuyerWhitelistCondition
+  #  blacklist:
+  #    components:
+  #    - SurplusBundle
 
 - type: listing
   id: UplinkSingarityBeacon
@@ -1365,7 +1371,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: freedom }
   productEntity: FreedomImplanter
   cost:
-    Telecrystal: 25 # goob
+    Telecrystal: 18 # goob - not quite worth any more than that
   categories:
     - UplinkImplants
 
@@ -1377,7 +1383,7 @@
   icon: { sprite: /Textures/Structures/Specific/anomaly.rsi, state: anom4 }
   productEntity: ScramImplanter
   cost:
-    Telecrystal: 20 # goob - it's a gamble that may kill you easily but can also save an agent. and that's why the 20 TC Balance tier makes sense.
+    Telecrystal: 15 # goob - can be useful, but does nothing on its own
   categories:
     - UplinkImplants
 
@@ -1412,7 +1418,7 @@
   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
   productEntity: RadioImplanter
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 7 # goob - Syndicate Radio Price Adjust
   categories:
   - UplinkImplants
   conditions:
@@ -1574,7 +1580,7 @@
   description: uplink-holster-desc
   productEntity: ClothingBeltSyndieHolster
   cost:
-    Telecrystal: 2 # goob - Pointless and valid.
+    Telecrystal: 8 # goob - holster rework
   categories:
   - UplinkWearables
 
@@ -1634,6 +1640,16 @@
   categories:
   - UplinkWearables
 
+
+- type: listing
+  id: UplinkClothingOuterVestWebElite
+  name: uplink-clothing-outer-vest-web-elite-name
+  description: uplink-clothing-outer-vest-web-elite-desc
+  productEntity: ClothingOuterVestWebElite
+  cost:
+    Telecrystal: 25 # goob
+  categories:
+  - UplinkWearables
 
 - type: listing
   id: UplinkClothingShoesBootsMagSyndie
@@ -1709,6 +1725,11 @@
     Telecrystal: 75 # goob
   categories:
   - UplinkWearables
+  #conditions: # Goobstation - no fuck you
+  #- !type:StoreWhitelistCondition
+  #  whitelist:
+  #    tags:
+  #    - NukeOpsUplink
 
 
 - type: listing
@@ -1721,6 +1742,11 @@
     Telecrystal: 75 # goob
   categories:
   - UplinkWearables
+  #conditions: # Goobstation - no fuck you
+  #- !type:StoreWhitelistCondition
+  # whitelist:
+  #    tags:
+  #    - NukeOpsUplink
 
 
 - type: listing
@@ -1790,16 +1816,6 @@
   productEntity: RevolverCapGun
   cost:
     Telecrystal: 4 # goob - Funny, but not 20 TC Funny.
-  categories:
-  - UplinkPointless
-
-- type: listing
-  id: UplinkBoombox
-  name: uplink-boombox-name
-  description: uplink-boombox-desc
-  productEntity: Boombox
-  cost:
-    Telecrystal: 2 # KS14 - epic for gunning down griggers with an L6 therefore its got to be cheap
   categories:
   - UplinkPointless
 

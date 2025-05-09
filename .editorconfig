@@ -351,15 +351,6 @@ resharper_csharp_allow_alias = false
 [*.{csproj,xml,yml,yaml,dll.config,msbuildproj,targets,props}]
 indent_size = 2
 
-# Default severity for analyzer diagnostics with category 'Style'
-dotnet_analyzer_diagnostic.category-Style.severity = silent
-
-# IDE0007: Use implicit type
-dotnet_diagnostic.IDE0007.severity = suggestion
-
-# IDE0007: Use implicit type
-dotnet_diagnostic.IDE0007.severity = none
-
 [nuget.config]
 indent_size = 2
 

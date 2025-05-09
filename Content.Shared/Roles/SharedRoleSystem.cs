@@ -234,20 +234,30 @@ public abstract class SharedRoleSystem : EntitySystem
         return true;
     }
 
+    /// <summary>
+    ///     Return the most recently specified role type, or Neutral
+    /// </summary>
     private ProtoId<RoleTypePrototype> GetRoleTypeByTime(MindComponent mind)
     {
-        // If any Mind Roles specify a Role Type, return the most recent. Otherwise return Neutral
+        var role = GetRoleCompByTime(mind);
+        return role?.Comp?.RoleType ?? "Neutral";
+    }
 
-        var roles = new List<ProtoId<RoleTypePrototype>>();
+    /// <summary>
+    ///     Return the most recently specified role type's mind role entity, or null
+    /// </summary>
+    public Entity<MindRoleComponent>? GetRoleCompByTime(MindComponent mind)
+    {
+        var roles = new List<Entity<MindRoleComponent>>();
 
         foreach (var role in mind.MindRoles)
         {
             var comp = Comp<MindRoleComponent>(role);
             if (comp.RoleType is not null)
-                roles.Add(comp.RoleType.Value);
+                roles.Add((role, comp));
         }
 
-        ProtoId<RoleTypePrototype> result = (roles.Count > 0) ? roles.LastOrDefault() : "Neutral";
+        Entity<MindRoleComponent>? result = roles.Count > 0 ? roles.LastOrDefault() : null;
         return (result);
     }
 
@@ -274,14 +284,14 @@ public abstract class SharedRoleSystem : EntitySystem
         else
         {
             var error = $"The Character Window of {_minds.MindOwnerLoggingString(comp)} potentially did not update immediately : session error";
-            _adminLogger.Add(LogType.Mind, LogImpact.High, $"{error}");
+            _adminLogger.Add(LogType.Mind, LogImpact.Medium, $"{error}");
         }
 
         if (comp.OwnedEntity is null)
         {
             Log.Error($"{ToPrettyString(mind)} does not have an OwnedEntity!");
             _adminLogger.Add(LogType.Mind,
-                LogImpact.High,
+                LogImpact.Medium,
                 $"Role Type of {ToPrettyString(mind)} changed to {roleTypeId}");
             return;
         }
@@ -367,7 +377,7 @@ public abstract class SharedRoleSystem : EntitySystem
         if (MindRemoveRole<T>(mindId))
             return true;
 
-        // KS14 supresses this warning: Log.Warning($"Failed to remove role {typeof(T)} from {ToPrettyString(mindId)} : mind does not have role ");
+        Log.Warning($"Failed to remove role {typeof(T)} from {ToPrettyString(mindId)} : mind does not have role ");
         return false;
     }
 

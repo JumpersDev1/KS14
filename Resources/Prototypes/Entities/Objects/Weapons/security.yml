@@ -136,7 +136,7 @@
   name: stun baton
   parent: [BaseItem, BaseSecurityContraband]
   id: Stunbaton
-  description: A stun baton for incapacitating people with. Actively harming with this is considered gigachad!
+  description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
   components:
   - type: Tag # goob edit
     tags:
@@ -171,17 +171,20 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 18
+        Blunt: 7
     bluntStaminaDamageFactor: 2.0
     angle: 0
+    animation: WeaponArcThrust
   # it was ~35 now it's 55 so it's a buff ig
   - type: StaminaDamageOnHit # goob edited
-    damage: 80
-    overtime: 0
+    damage: 15
+    overtime: 40
+    lightAttackDamageMultiplier: 5
+    lightAttackOvertimeDamageMultiplier: 0
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide # goob edited
-    damage: 35
-    overtime: 0
+    damage: 15
+    overtime: 40
     sound: /Audio/Weapons/egloves.ogg
   - type: DelayedKnockdownOnHit # Goobstation
     useDelay: stunbaton
@@ -253,7 +256,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 25
+        Blunt: 20
     soundHit:
       collection: MetalThud
     bluntStaminaDamageFactor: 1.5

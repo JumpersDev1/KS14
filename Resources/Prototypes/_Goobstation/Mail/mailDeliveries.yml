@@ -74,6 +74,7 @@
       MailSecurityDonuts: 2
       MailSecurityFlashlight: 2
       MailSecurityNonlethalsKit: 1.6
+      MailSecuritySpaceLaw: 1
   jobs: # Jobs
     Botanist:
       MailMutatedProduce: 1.6
@@ -110,6 +111,7 @@
       MailSecurityDonuts: 2
       MailSecurityFlashlight: 2
       MailSecurityNonlethalsKit: 1.6
+      MailSecuritySpaceLaw: 2
       MailWardenCrowdControl: 1.2
       MailDetectiveForensicSupplement: 1.2
     Janitor:
@@ -117,6 +119,7 @@
       MailSoapsOmega: 0.5
     Lawyer:
       MailLuxuryPen: 2
+      MailSecuritySpaceLaw: 0.8
     Librarian:
       MailBooksGuide: 2
       MailBooksAuthor: 2

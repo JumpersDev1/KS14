@@ -29,6 +29,27 @@
     ClothingNeckGenderqueerPin: 3
     ClothingNeckTransPin: 3
     ClothingNeckAutismPin: 3
-    ClothingNeckCloakTrans: 14
+    # ClothingNeckGoldAutismPin: 3 # somehow we don't have this one in goob so I'm commenting this out
+    PlushieSharkBlue: 2
+    PlushieSharkPink: 2
+    PlushieSharkGrey: 2
+    ClothingNeckScarfStripedAce: 2
+    ClothingNeckScarfStripedAro: 2
+    ClothingNeckScarfStripedAroace: 2
+    ClothingNeckScarfStripedBiSexual: 2
+    ClothingNeckScarfStripedGay: 2
+    ClothingNeckScarfStripedInter: 2
+    ClothingNeckScarfStripedLesbian: 2
+    ClothingNeckScarfStripedPan: 2
+    ClothingNeckScarfStripedNonBinary: 2
+    ClothingNeckScarfStripedRainbow: 2
+    ClothingNeckScarfStripedTrans: 2
+    ClothingHeadHatXmasCrown: 2
+    BedsheetRainbow: 2
+    ClothingNeckHeadphones: 2
+    ClothingHeadHatFlowerWreath: 2
+    ClothingUniformColorRainbow: 2
+    ClothingUnderSocksCoder: 2
+    ClothingUnderSocksBee: 2
   contrabandInventory:
-    ClothingNeckCloakAro: 88
+    ClothingNeckScarfStripedLesbianLong: 2

@@ -57,12 +57,6 @@ public sealed partial class CCVars
         CVarDef.Create("control.static_storage_ui", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
-    ///     Whether or not the chat filters slurs to their mild approximations.
-    /// </summary>
-    public static readonly CVarDef<bool> SlurFilter =
-        CVarDef.Create("control.slur_filter", true, CVar.CLIENTONLY | CVar.ARCHIVE);
-
-    /// <summary>
     ///     Whether or not the storage window uses a transparent or opaque sprite.
     /// </summary>
     public static readonly CVarDef<bool> OpaqueStorageWindow =

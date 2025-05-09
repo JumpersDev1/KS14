@@ -179,11 +179,6 @@
     Glass: 100
 
 - type: latheRecipe
-  parent: SynthesizerInstrument
-  id: Boombox
-  result: Boombox
-
-- type: latheRecipe
   parent: BaseToolRecipe
   id: NodeScanner
   result: NodeScanner

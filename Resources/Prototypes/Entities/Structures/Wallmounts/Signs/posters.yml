@@ -1041,9 +1041,9 @@
 
 - type: entity
   parent: PosterBase
-  id: PosterLegitKSLeaders
-  name: "Klovnstation Leaders"
-  description: A poster showcasing Captain Adec and CE Glen Esau. Glory to KS14!'
+  id: PosterLegitJustAWeekAway
+  name: "Just a Week Away..."
+  description: A poster advertising a long delayed project, it still claims it to be 'just a week away...'
   components:
   - type: Sprite
     state: poster38_legit
@@ -1183,6 +1183,14 @@
   - type: Sprite
     state: poster53_legit
 
+- type: entity
+  parent: PosterBase
+  id: PosterLegitTyrone
+  name: "Tyrone's Guide to Space"
+  description: "A poster advertising online schooling about space. The classes listed seem to cover things from the basic usage of station equipment to complicated subjects like creating pipebombs or covering entire hallways in spacelube. A disclaimer reads \"It's never THAT bad, and at the end you might even get a tortilla.\""
+  components:
+  - type: Sprite
+    state: poster54_legit
 
 #maps
 

@@ -6456,7 +6456,7 @@ entities:
     - type: Godmode
     missingComponents:
     - Destructible
-- proto: PosterLegitKSLeaders
+- proto: PosterLegitJustAWeekAway
   entities:
   - uid: 821
     components:

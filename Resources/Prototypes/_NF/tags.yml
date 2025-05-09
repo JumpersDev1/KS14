@@ -16,6 +16,9 @@
   id: CatWearable
 
 - type: Tag
+  id: BookSpaceLaw
+
+- type: Tag
   id: CrossbowBolt
 
 - type: Tag

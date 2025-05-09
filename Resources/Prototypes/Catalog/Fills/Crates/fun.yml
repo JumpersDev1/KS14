@@ -253,7 +253,7 @@
   id: CrateFunInstrumentsVariety
   parent: CrateGenericSteel
   name: variety instrument collection
-  description: Get your sad station movin' and groovin' with this catch-all variety pack! Contains eight different instruments.
+  description: Get your sad station movin' and groovin' with this catch-all variety pack! Contains seven different instruments.
   components:
   - type: StorageFill
     contents:
@@ -264,7 +264,6 @@
       - id: HarmonicaInstrument
       - id: RecorderInstrument
       - id: GlockenspielInstrument
-      - id: Boombox #ks14
 
 - type: entity
   id: CrateFunInstrumentsBrass
@@ -456,6 +455,21 @@
         amount: 2
       - id: WeaponWaterPistol
         amount: 4
+
+- type: entity
+  id: CrateFunFoamGuns
+  parent: CratePlastic
+  name: Foam Force crate
+  description: Contains four Foam Force rifles, some grenades, and extra ammo. It's [REDACTED] or nothing!
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleFoam
+      amount: 4
+    - id: BoxDonkSoftBox
+      amount: 2
+    - id: GrenadeFoamDart
+      amount: 4
 
 - type: entity
   id: CrateFunBoxing
